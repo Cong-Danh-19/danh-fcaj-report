@@ -11,10 +11,10 @@ pre : " <b> 5.3.2 </b> "
 Sau khi User Pool được tạo thành công, bạn cần lấy các mã định danh của nó để kết nối với ứng dụng React.
 
 1. Tại trang tổng quan của Cognito, sao chép **User Pool ID** (Có dạng `ap-southeast-2_xxxxxxxxx`).
-![Cognito IDs](/images/5-Workshop/5.3-Cognito-auth/Screenshot4.png)
+![Cognito IDs](images/Screenshot4.png)
 
 2. Chuyển sang tab **App integration** (Tích hợp ứng dụng), cuộn xuống phần *App clients*, và sao chép **Client ID**.
-![Client IDs](/images/5-Workshop/5.3-Cognito-auth/Screenshot5.png)
+![Client IDs](images/Screenshot5.png)
 
 
 3. Trong mã nguồn React (`App.jsx`), cài đặt thư viện AWS Amplify (`npm install aws-amplify @aws-amplify/ui-react`) và cấu hình nó bằng các mã ID vừa lấy được:

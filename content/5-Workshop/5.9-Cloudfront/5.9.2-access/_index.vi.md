@@ -16,9 +16,9 @@ Sau khi nhấn tạo, bạn sẽ được đưa đến trang chi tiết của di
 2. Kiểm tra trạng thái **Last modified**. Nó sẽ hiển thị là `Deploying`.
 3. Vui lòng chờ khoảng 3 đến 5 phút cho đến khi quá trình phân phối hoàn tất (trạng thái đổi thành ngày giờ cụ thể).
 
-![Cloudfront](/images/5-Workshop/5.9-Cloudfront/Screenshot4.png)
+![Cloudfront](images/Screenshot4.png)
 Khi quá trình deploy kết thúc, hãy copy Domain Name của CloudFront và dán vào trình duyệt của bạn.
 
 **Xin chúc mừng!** 🎉 Ứng dụng Serverless Hybrid Real-time Chat của bạn hiện đã chính thức trực tuyến trên Internet, được bảo mật tuyệt đối và sẵn sàng phục vụ hàng triệu người dùng!
 
-![Cloudfront](/images/5-Workshop/5.9-Cloudfront/Screenshot5.png)
+![Cloudfront](images/Screenshot5.png)

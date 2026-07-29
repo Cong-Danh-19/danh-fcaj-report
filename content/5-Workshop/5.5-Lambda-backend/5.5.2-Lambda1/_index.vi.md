@@ -11,10 +11,10 @@ pre: " <b> 5.5.2 </b> "
 Hàm này xử lý các yêu cầu tĩnh: lấy lịch sử tin nhắn, lấy danh sách phòng, lấy danh sách user từ Cognito và sinh thẻ Upload ảnh tạm thời (S3 Presigned URL).
 
 1. Vào **AWS Lambda**, nhấn **Create function**.
-![Lambda1 Setup](/images/5-Workshop/5.5-Lambda-backend/Screenshot10.png)
+![Lambda1 Setup](images/Screenshot10.png)
 2. Tên hàm: **`GetMessagesHandler`**, chọn ngôn ngữ **Python 3.12**, và gắn cái Role **`ChatApp_Lambda_Role`** vừa tạo.
-![Lambda1 Setup](/images/5-Workshop/5.5-Lambda-backend/Screenshot11.png)
-![Lambda1 Setup](/images/5-Workshop/5.5-Lambda-backend/Screenshot12.png)
+![Lambda1 Setup](images/Screenshot11.png)
+![Lambda1 Setup](images/Screenshot12.png)
 
 3. Dán mã nguồn Python bên dưới vào và nhấn **Deploy**.
 *(Đừng quên sửa `YOUR_S3_BUCKET_NAME` thành tên bucket kho ảnh S3 của bạn)*:

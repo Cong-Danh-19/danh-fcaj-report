@@ -14,13 +14,13 @@ Navigate to the **DynamoDB** service in the AWS Console and click **Create table
 * **Table name:** `Connections`
 * **Partition key:** `connectionID` (String)
 * *Purpose:* Temporarily stores the IDs of users who have an active WebSocket connection. This allows the backend to know who to broadcast messages to.
-![DynamoDB Tables](/images/5-Workshop/5.4-DynamoDB/Screenshot2.PNG)
+![DynamoDB Tables](images/Screenshot2.PNG)
 
 **2. The `Rooms` Table**
 * **Table name:** `Rooms`
 * **Partition key:** `roomID` (String)
 * *Purpose:* Stores details about chat rooms, such as the room name and the list of members (to support private and group chats).
-![DynamoDB Tables](/images/5-Workshop/5.4-DynamoDB/Screenshot4.PNG)
+![DynamoDB Tables](images/Screenshot4.PNG)
 
 **3. The `Messages` Table**
 * **Table name:** `Messages`
@@ -30,6 +30,6 @@ Navigate to the **DynamoDB** service in the AWS Console and click **Create table
 
 For the capacity settings, you can leave them as **Provisioned** (the default) to stay within the AWS Free Tier.
 
-![DynamoDB Tables](/images/5-Workshop/5.4-DynamoDB/Screenshot5.PNG)
+![DynamoDB Tables](images/Screenshot5.PNG)
 Wait a few moments until the status of all three tables becomes **Active**. Our database layer is now ready!
-![DynamoDB Tables](/images/5-Workshop/5.4-DynamoDB/Screenshot6.png)
+![DynamoDB Tables](images/Screenshot6.png)

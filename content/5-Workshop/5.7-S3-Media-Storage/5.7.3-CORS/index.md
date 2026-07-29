@@ -13,7 +13,7 @@ to S3.
 
 1.  Still in the Permissions tab, scroll to the bottom to find Cross-origin
     resource sharing (CORS).
-![DynamoDB Tables](/images/5-Workshop/5.7-S3-Media-Storage/Screenshot9.PNG)
+![DynamoDB Tables](images/Screenshot9.PNG)
 
 2.  Click Edit and paste the following JSON configuration:
 
@@ -27,8 +27,8 @@ to S3.
     }
 ]
 ```
-![DynamoDB Tables](/images/5-Workshop/5.7-S3-Media-Storage/Screenshot10.PNG)
+![DynamoDB Tables](images/Screenshot10.PNG)
 
 3.  Click Save changes.
-![DynamoDB Tables](/images/5-Workshop/5.7-S3-Media-Storage/Screenshot11.PNG)
+![DynamoDB Tables](images/Screenshot11.PNG)
 

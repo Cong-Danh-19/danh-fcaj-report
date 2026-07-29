@@ -11,10 +11,10 @@ pre: " <b> 5.5.2 </b> "
 This function processes standard HTTP requests: fetching message history, listing chat rooms, fetching registered users from Cognito, and generating S3 Presigned URLs for image uploads.
 
 1. Go to **AWS Lambda** and click **Create function**.
-![Lambda1 Setup](/images/5-Workshop/5.5-Lambda-backend/Screenshot10.png)
+![Lambda1 Setup](images/Screenshot10.png)
 2. Name it **`GetMessagesHandler`**, select **Python 3.12**, and attach the **`ChatApp_Lambda_Role`**.
-![Lambda1 Setup](/images/5-Workshop/5.5-Lambda-backend/Screenshot11.png)
-![Lambda1 Setup](/images/5-Workshop/5.5-Lambda-backend/Screenshot12.png)
+![Lambda1 Setup](images/Screenshot11.png)
+![Lambda1 Setup](images/Screenshot12.png)
 
 3. Paste the following code into the editor, click **Deploy**.
 *(Remember to replace `YOUR_S3_BUCKET_NAME` with your actual bucket name)*:

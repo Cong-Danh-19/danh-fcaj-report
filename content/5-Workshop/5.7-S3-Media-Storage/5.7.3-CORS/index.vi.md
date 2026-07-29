@@ -13,7 +13,7 @@ tiếp lên S3.
 
 1.  Vẫn ở tab Permissions, cuộn xuống dưới cùng để tìm mục Cross-origin resource
     sharing (CORS).
-![DynamoDB Tables](/images/5-Workshop/5.7-S3-Media-Storage/Screenshot9.PNG)
+![DynamoDB Tables](images/Screenshot9.PNG)
 
 2.  Nhấn Edit và dán cấu hình JSON sau đây:
 
@@ -27,7 +27,7 @@ tiếp lên S3.
     }
 ]
 ```
-![DynamoDB Tables](/images/5-Workshop/5.7-S3-Media-Storage/Screenshot10.PNG)
+![DynamoDB Tables](images/Screenshot10.PNG)
 
 3.  Nhấn Save changes.
-![DynamoDB Tables](/images/5-Workshop/5.7-S3-Media-Storage/Screenshot11.PNG)
+![DynamoDB Tables](images/Screenshot11.PNG)

@@ -11,10 +11,10 @@ pre : " <b> 5.7.2 </b> "
 We need to allow browsers to read and display the images stored in this bucket.
 
 1. Click on your newly created bucket and navigate to the **Permissions** tab.
-![DynamoDB Tables](/images/5-Workshop/5.7-S3-Media-Storage/Screenshot5.PNG)
+![DynamoDB Tables](images/Screenshot5.PNG)
 
 2. Scroll down to **Bucket policy** and click **Edit**.
-![DynamoDB Tables](/images/5-Workshop/5.7-S3-Media-Storage/Screenshot6.PNG)
+![DynamoDB Tables](images/Screenshot6.PNG)
 
 3. Paste the following JSON policy. **Important: Replace `YOUR_BUCKET_NAME` with your actual bucket name.**
 
@@ -32,7 +32,7 @@ We need to allow browsers to read and display the images stored in this bucket.
     ]
 }
 ```
-![DynamoDB Tables](/images/5-Workshop/5.7-S3-Media-Storage/Screenshot7.PNG)
+![DynamoDB Tables](images/Screenshot7.PNG)
 
 4.  Click Save changes.
-![DynamoDB Tables](/images/5-Workshop/5.7-S3-Media-Storage/Screenshot8.PNG)
+![DynamoDB Tables](images/Screenshot8.PNG)

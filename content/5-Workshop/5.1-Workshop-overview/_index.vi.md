@@ -15,7 +15,7 @@ Thay vì phụ thuộc vào các máy chủ truyền thống chạy 24/7 (như A
 
 Dưới đây là kiến trúc tổng thể của hệ thống mà chúng ta sắp xây dựng:
 
-![Sơ đồ kiến trúc](/images/WorkshopDiagram.drawio.png)
+![Sơ đồ kiến trúc](images/WorkshopDiagram.drawio.png)
 
 
 ### Luồng hoạt động của hệ thống

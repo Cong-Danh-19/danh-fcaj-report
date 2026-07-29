@@ -84,4 +84,4 @@ Attending the **FCAJ x AABW** product presentation was extremely valuable, givin
 
 
 #### Event photos
-![Event](/images/event1.jpg)
+![Event](images/event1.jpg)
