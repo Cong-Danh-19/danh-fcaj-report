@@ -1,125 +1,86 @@
 ---
-title: "Event 1"
-date: 2024-01-01
-weight: 1
+title: "Sự kiện 1"
+date: 2026-07-25
+weight: 4
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Báo cáo tổng kết: Buổi trình bày sản phẩm sau Hackathon của chương trình FCAJ
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+*Lưu ý: tên sự kiện chính xác, ngày tổ chức và địa điểm sẽ được bổ sung sau.*
 
-### Mục Đích Của Sự Kiện
+### Mục tiêu tham gia
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- Lắng nghe các anh chị trong chương trình FCAJ trình bày sản phẩm đã xây dựng trong cuộc thi Hackathon
+- Hiểu cách các giải pháp được thiết kế và kết quả đạt được sau cuộc thi
+- Học hỏi kinh nghiệm thực tế của các anh chị khi xây dựng sản phẩm dưới áp lực thời gian của hackathon
+- Có thêm cảm hứng và định hướng cho dự án/hackathon sắp tới của bản thân (nếu có)
 
-### Danh Sách Diễn Giả
+### Diễn giả
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- **Đội 3KA** – trình bày sản phẩm dựa trên AI agent để xử lý video/sự cố thời gian thực trên AWS
+- **Đội Dream AI** – trình bày nền tảng điều phối nhiều AI agent xây dựng bằng Amazon Bedrock và agent runtime
+- **Đội Plan V** – trình bày nền tảng tự động hóa kết hợp hạ tầng được cấp phát bằng Terraform, dịch vụ container hóa và các tính năng generative AI
+- **Đội One Team** – trình bày hệ thống chatbot chăm sóc khách hàng kết nối các kênh nhắn tin (Zalo, WhatsApp và ứng dụng di động trong tương lai) với một AI agent backend xây dựng trên Amazon Bedrock AgentCore, cùng các lớp memory, dữ liệu và giám sát dành cho quản trị viên
 
-### Nội Dung Nổi Bật
+### Nội dung nổi bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Ba sản phẩm khác nhau, cùng chung một nền tảng
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+Dù mỗi nhóm giải quyết một bài toán khác nhau, các sản phẩm đều được xây dựng trên một tập hợp dịch vụ AWS tương tự nhau: API Gateway, Lambda, dịch vụ container (ECS/Fargate), lưu trữ (S3, DynamoDB, PostgreSQL) và các dịch vụ bảo mật/giám sát (WAF, Cognito, IAM, CloudWatch). Khi đặt cạnh nhau, có thể thấy rõ cùng một tập dịch vụ có thể được kết hợp theo rất nhiều cách khác nhau tùy vào mục đích của sản phẩm.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### Generative AI được dùng như một phần thật sự của sản phẩm, không chỉ để trình diễn
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+Nhiều nhóm đã tích hợp generative AI (Amazon Bedrock, AI agent) trực tiếp vào logic cốt lõi của sản phẩm, thay vì chỉ thêm vào cho có. Điều này cho thấy các dịch vụ AI có thể kết hợp với các thành phần cloud truyền thống để giải quyết một vấn đề thực sự, chứ không chỉ để gây ấn tượng lúc demo.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### Bài học từ những người đã thực sự trải qua hackathon
 
-#### Domain-Driven Design (DDD)
+Vì các anh chị trình bày đã trải qua hackathon và giờ chia sẻ lại kết quả, phần trình bày không chỉ dừng ở kiến trúc mà còn tập trung vào những gì họ học được từ chính quá trình đó — điều gì hiệu quả, điều gì họ sẽ làm khác đi, và sản phẩm đã thay đổi ra sao so với bản nộp ban đầu trong hackathon.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+### Bài học rút ra
 
-#### Event-Driven Architecture
+- **Có mặt và bắt tay vào làm đã là một nửa chiến thắng.** Việc dám bắt đầu và kiên trì theo đến cùng quan trọng hơn việc chờ đợi một ý tưởng hoàn hảo.
+- **Một sản phẩm nhỏ nhưng hoàn chỉnh có giá trị hơn một ý tưởng lớn nhưng dang dở.** Một giải pháp đơn giản chạy được trọn vẹn từ đầu đến cuối luôn giá trị hơn một ý tưởng tham vọng nhưng chưa bao giờ hoàn thành.
+- **Con người gặp gỡ được quan trọng hơn cả giải thưởng.** Những kết nối, sự hướng dẫn từ mentor và những gì học được cùng nhau trong hành trình hackathon có giá trị lớn hơn kết quả cuộc thi.
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+### Áp dụng vào công việc
 
-#### Compute Evolution
+- Ưu tiên xây dựng một phiên bản chạy được tối thiểu trước, sau đó mới cải tiến dần, thay vì cố gắng thiết kế một hệ thống "hoàn hảo" ngay từ đầu.
+- Tìm cách tích hợp các công cụ hỗ trợ AI vào dự án một cách thiết thực, có mục tiêu rõ ràng, theo những ví dụ các anh chị đã chia sẻ.
+- Chủ động hơn trong việc kết nối với mentor và bạn cùng chương trình — xem những cuộc trò chuyện đó là một phần kết quả học được, chứ không chỉ là hoạt động phụ.
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+### Trải nghiệm sự kiện
 
-#### Amazon Q Developer
+Tham dự buổi trình bày sản phẩm **FCAJ x AABW** thực sự rất giá trị, giúp tôi có cái nhìn rõ ràng và cụ thể hơn nhiều về cách một ý tưởng hackathon trở thành sản phẩm thực sự hoạt động, khi các đội đã có thời gian nhìn lại. Những trải nghiệm chính bao gồm:
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+#### Học hỏi từ những người đã thực sự trải qua quá trình đó
 
-### Những Gì Học Được
+* Các anh chị từ đội 3KA, Dream AI, Plan V và One Team chia sẻ thẳng thắn về hành trình hackathon của mình — không chỉ dừng ở kiến trúc cuối cùng, mà cả những điều đã hiệu quả, chưa hiệu quả, và những gì sẽ thay đổi nếu làm lại.
+* Qua những câu chuyện sản phẩm thực tế đó, tôi hiểu sâu hơn cách AI agent, tích hợp theo hướng sự kiện (event-driven) và hạ tầng dạng infrastructure-as-code được áp dụng vào những bài toán thực tế, chứ không chỉ là ví dụ lý thuyết.
 
-#### Tư Duy Thiết Kế
+#### Tiếp cận nhiều hướng kỹ thuật khác nhau
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+* Việc quan sát bốn đội giải quyết bốn bài toán khác nhau giúp tôi hình dung rõ hơn cách cùng một tập dịch vụ AWS — API Gateway, Lambda, dịch vụ container, cơ sở dữ liệu được quản lý — có thể được sắp xếp theo nhiều cách rất khác nhau tùy vào sản phẩm.
+* Học được cách AI agent có thể được điều phối và kết nối với các kênh bên ngoài (như chatbot của One Team) hoặc được gắn trực tiếp vào một pipeline xử lý (như hệ thống video/sự cố của 3KA).
+* Hiểu được những sự đánh đổi mà mỗi đội phải chọn giữa tốc độ, phạm vi và độ sâu kỹ thuật dưới áp lực thời gian của hackathon.
 
-#### Kiến Trúc Kỹ Thuật
+#### Tận dụng các công cụ hỗ trợ AI hiện đại
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
-
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
-
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+* Tìm hiểu cách Amazon Bedrock và AgentCore được sử dụng xuyên suốt nhiều sản phẩm như một nền tảng thực tế để xây dựng AI agent, thay vì chỉ là một thử nghiệm riêng lẻ.
+* Học được cách các đội kết hợp generative AI với các dịch vụ cloud truyền thống hơn (hàng đợi, lưu trữ, giám sát) để giữ cho sản phẩm ổn định, chứ không chỉ ấn tượng lúc demo.
 
 #### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+
+* Sự kiện là cơ hội để trò chuyện trực tiếp với các đội trình bày và những người tham dự khác, trao đổi về các lựa chọn thiết kế và bài học rút ra.
+* Được nghe nhiều góc nhìn khác nhau đặt cạnh nhau càng củng cố suy nghĩ rằng không có một cách "đúng duy nhất" để xây dựng sản phẩm — chỉ có những lựa chọn phù hợp với mục tiêu và ràng buộc của từng đội.
 
 #### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
 
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+* Có mặt và bắt tay vào làm quan trọng hơn việc chờ đợi một ý tưởng hoàn hảo.
+* Một sản phẩm nhỏ nhưng hoàn chỉnh có giá trị hơn một ý tưởng tham vọng nhưng không bao giờ xong.
+* Những kết nối và kiến thức học được cùng nhau trong một sự kiện như thế này thường có giá trị lớn hơn kết quả cuộc thi.
+* Các công cụ AI như Amazon Bedrock AgentCore có thể giúp tăng tốc đáng kể việc xây dựng chức năng thực tế khi được tích hợp một cách có chủ đích vào kiến trúc sản phẩm.
+
+#### Hình ảnh sự kiện
+![Event](/images/event1.jpg)
