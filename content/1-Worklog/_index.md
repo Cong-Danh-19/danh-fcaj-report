@@ -1,39 +1,29 @@
 ---
-title: "Worklog"
-date: 2024-01-01
+title: "Work Log"
+date: 2026-06-01
 weight: 1
 chapter: false
 pre: " <b> 1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+# Work Log Introduction
 
-**On this page**, you will need to introduce your worklog. **How** did you complete it? How many weeks did you take to complete the program? **What** did you do in those weeks?
+During the internship period at FCAJ, I participated in the development of a web application deployed on the AWS cloud platform.
 
-Typically, and as a standard, a worklog is carried out over about 3 months (throughout the internship period) with weekly contents as follows:
+The worklog was completed throughout an 11-week internship program (from 01/06/2026 to 14/08/2026, approximately 2.5 months). During this period, I studied AWS cloud services, analyzed system requirements, designed the application architecture, developed frontend and backend components, integrated databases, deployed the application on AWS, monitored system performance, and completed technical documentation.
 
-**Week 1:** [Getting familiar with AWS and basic AWS services](1.1-week1/)
+The main tasks completed during the internship are summarized below:
 
-**Week 2:** [Doing task A...](1.2-week2/)
+- [**Week 1: Getting familiar with AWS environment and basic cloud services**](1.1-Week1/)
+- [**Week 2: Requirement analysis and system architecture design**](1.2-Week2/)
+- [**Week 3: Frontend application development**](1.3-Week3/)
+- [**Week 4: Backend API development**](1.4-Week4/)
+- [**Week 5: Database design and integration**](1.5-Week5/)
+- [**Week 6: Deploying application on AWS EC2**](1.6-Week6/)
+- [**Week 7: Integrating AWS S3 storage and cloud database services (RDS/DynamoDB)**](1.7-Week7/)
+- [**Week 8: System testing and error handling**](1.8-Week8/)
+- [**Week 9: CloudWatch monitoring and performance optimization**](1.9-Week9/)
+- [**Week 10: Advanced feature development and technical documentation**](1.10-Week10/)
+- [**Week 11: Final testing, deployment and report completion**](1.11-Week11/)
 
-**Week 3:** [Doing task B...](1.3-week3/)
-
-**Week 4:** [Doing task C...](1.4-week4/)
-
-**Week 5:** [Doing task D...](1.5-week5/)
-
-**Week 6:** [Doing task E...](1.6-week6/)
-
-**Week 7:** [Doing task G...](1.7-week7/)
-
-**Week 8:** [Doing task H...](1.8-week8/)
-
-**Week 9:** [Doing task I...](1.9-week9/)
-
-**Week 10:** [Doing task L...](1.10-week10/)
-
-**Week 11:** [Doing task M...](1.11-week11/)
-
-**Week 12:** [Doing task N...](1.12-week12/)
+Detailed descriptions of each week's activities and results are presented in the corresponding sections.

@@ -1,40 +1,36 @@
 ---
 title: "Tự đánh giá"
-date: 2024-01-01
+date: 2026-08-14
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+Trong quá trình thực tập tại **First Cloud AI Journey (FCAJ)**, từ **01/06/2026** đến **14/08/2026**, tôi đã có cơ hội bước ra khỏi lý thuyết trên giảng đường để trực tiếp làm việc trong một môi trường sản phẩm thực tế.
 
-Trong suốt thời gian thực tập tại **[Tên công ty/tổ chức]** từ **[ngày bắt đầu]** đến **[ngày kết thúc]**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
-Tôi đã tham gia **[mô tả ngắn gọn dự án hoặc công việc chính]**, qua đó cải thiện kỹ năng **[liệt kê kỹ năng: lập trình, phân tích, viết báo cáo, giao tiếp…]**.  
+Tôi tham gia xây dựng một ứng dụng web được triển khai trên **AWS**, trải qua đầy đủ các giai đoạn từ phân tích yêu cầu, thiết kế hệ thống, phát triển frontend/backend, tích hợp cơ sở dữ liệu, triển khai lên cloud, cho đến giám sát hệ thống và hoàn thiện tài liệu kỹ thuật. Nhờ đó, tôi đã rèn luyện thêm các kỹ năng về **điện toán đám mây, phát triển ứng dụng full-stack, giải quyết vấn đề và làm việc nhóm**.
 
-Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy, và tích cực trao đổi với đồng nghiệp để nâng cao hiệu quả công việc.
+Về thái độ làm việc, tôi luôn cố gắng hoàn thành công việc đúng hạn, tuân thủ quy trình làm việc của nhóm, đồng thời giữ tinh thần cởi mở với phản hồi để không ngừng cải thiện bản thân trong suốt kỳ thực tập.
 
-Để phản ánh một cách khách quan quá trình thực tập, tôi xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
+Dưới đây là phần tự đánh giá của tôi theo một số tiêu chí, được nhìn nhận một cách khách quan nhất có thể:
 
+| STT | Tiêu chí | Mô tả | Tốt | Khá | Trung bình |
+| --- | --- | --- | --- | --- | --- |
+| 1 | **Nền tảng kỹ thuật** | Mức độ nắm vững các khái niệm cloud/AWS và khả năng vận dụng vào công việc thực tế | ✅ | ☐ | ☐ |
+| 2 | **Tốc độ tiếp thu** | Tốc độ làm quen với công cụ, dịch vụ và công nghệ mới | ☐ | ✅ | ☐ |
+| 3 | **Tính chủ động** | Chủ động đề xuất công việc hoặc cải tiến mà không cần chờ được giao | ✅ | ☐ | ☐ |
+| 4 | **Tinh thần trách nhiệm** | Chịu trách nhiệm với công việc được giao và đảm bảo chất lượng đầu ra | ✅ | ☐ | ☐ |
+| 5 | **Quản lý thời gian** | Hoàn thành công việc đúng tiến độ và bám sát lịch trình đã thống nhất | ✅ | ☐ | ☐ |
+| 6 | **Tiếp thu phản hồi** | Đón nhận và điều chỉnh theo phản hồi từ mentor/đồng nghiệp | ✅ | ☐ | ☐ |
+| 7 | **Kỹ năng giao tiếp** | Sự rõ ràng khi báo cáo tiến độ và trình bày các vấn đề kỹ thuật | ☐ | ✅ | ☐ |
+| 8 | **Khả năng phối hợp** | Phối hợp hiệu quả với các thành viên khác trong nhóm | ✅ | ☐ | ☐ |
+| 9 | **Tác phong chuyên nghiệp** | Tôn trọng đồng nghiệp, mentor và văn hóa của công ty | ✅ | ☐ | ☐ |
+| 10 | **Tư duy phân tích** | Khả năng phân tích vấn đề và đánh giá các phương án giải quyết | ☐ | ✅ | ☐ |
+| 11 | **Giá trị đóng góp** | Đóng góp thực tế vào tiến độ và kết quả của dự án | ✅ | ☐ | ☐ |
+| 12 | **Đánh giá tổng thể** | Nhận xét chung về toàn bộ quá trình thực tập | ✅ | ☐ | ☐ |
 
-| STT | Tiêu chí                            | Mô tả                                                                                            | Tốt | Khá | Trung bình |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | --- | --- | ---------- |
-| 1   | **Kiến thức và kỹ năng chuyên môn** | Hiểu biết về ngành, áp dụng kiến thức vào thực tế, kỹ năng sử dụng công cụ, chất lượng công việc | ✅   | ☐   | ☐          |
-| 2   | **Khả năng học hỏi**                | Tiếp thu kiến thức mới, học hỏi nhanh                                                            | ☐   | ✅   | ☐          |
-| 3   | **Chủ động**                        | Tự tìm hiểu, nhận nhiệm vụ mà không chờ chỉ dẫn                                                  | ✅   | ☐   | ☐          |
-| 4   | **Tinh thần trách nhiệm**           | Hoàn thành công việc đúng hạn, đảm bảo chất lượng                                                | ✅   | ☐   | ☐          |
-| 5   | **Kỷ luật**                         | Tuân thủ giờ giấc, nội quy, quy trình làm việc                                                   | ☐   | ☐   | ✅          |
-| 6   | **Tính cầu tiến**                   | Sẵn sàng nhận feedback và cải thiện bản thân                                                     | ☐   | ✅   | ☐          |
-| 7   | **Giao tiếp**                       | Trình bày ý tưởng, báo cáo công việc rõ ràng                                                     | ☐   | ✅   | ☐          |
-| 8   | **Hợp tác nhóm**                    | Làm việc hiệu quả với đồng nghiệp, tham gia nhóm                                                 | ✅   | ☐   | ☐          |
-| 9   | **Ứng xử chuyên nghiệp**            | Tôn trọng đồng nghiệp, đối tác, môi trường làm việc                                              | ✅   | ☐   | ☐          |
-| 10  | **Tư duy giải quyết vấn đề**        | Nhận diện vấn đề, đề xuất giải pháp, sáng tạo                                                    | ☐   | ✅   | ☐          |
-| 11  | **Đóng góp vào dự án/tổ chức**      | Hiệu quả công việc, sáng kiến cải tiến, ghi nhận từ team                                         | ✅   | ☐   | ☐          |
-| 12  | **Tổng thể**                        | Đánh giá chung về toàn bộ quá trình thực tập                                                     | ✅   | ☐   | ☐          |
+### Những điểm cần cải thiện
 
-### Cần cải thiện
-
-* Nâng cao tính kỹ luật, chấp hành nghiêm chỉnh nội quy của công ty hoặc bất kỳ trong một tổ chức nào
-* Cải thiện trong cách tư duy giải quyết vấn đề
-* Học cách giao tiếp tốt hơn trong giao tiếp hằng ngày và trong công việc, xử lý tình huống
+* Quản lý thời gian chặt chẽ hơn khi gặp các công việc liên quan đến dịch vụ AWS chưa quen thuộc, tránh dồn việc vào phút chót.
+* Rèn luyện cách trình bày các quyết định kỹ thuật một cách mạch lạc và súc tích hơn, đặc biệt trong các buổi trao đổi nhóm.
+* Tiếp tục xây dựng thói quen lường trước các trường hợp đặc biệt (edge case) và vấn đề tiềm ẩn ngay từ giai đoạn phát triển, thay vì chỉ phát hiện khi kiểm thử.

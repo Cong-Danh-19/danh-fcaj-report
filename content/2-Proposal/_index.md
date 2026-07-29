@@ -24,7 +24,7 @@ The solution completely eliminates server maintenance costs (Zero Server Mainten
 ### 3. Solution Architecture
 The system uses a Decoupled Architecture. The Frontend communicates with AWS through 2 separate gateways: HTTP API (REST) for heavy/static tasks and WebSocket API for ultra-light message streams.
 
-*(Insert your architecture diagram here: `![Architecture Diagram](/images/2-Proposal/architecture.jpeg)`)*
+![Solution Architecture](/images/WorkshopDiagram.drawio.png)
 
 **AWS Services Used:**
 - **Amazon S3:** Static frontend hosting (ReactJS) and media storage.

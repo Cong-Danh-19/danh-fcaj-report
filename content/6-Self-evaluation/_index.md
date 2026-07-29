@@ -6,34 +6,32 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+Over the course of my internship at **First Cloud AI Journey (FCAJ)**, from **01/06/2026** to **14/08/2026**, I had the chance to move beyond classroom theory and work hands-on in a real product environment.
 
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+I was involved in building a web application deployed on **AWS**, covering the full cycle from requirement analysis, system design, frontend/backend development, database integration, cloud deployment, to monitoring and technical documentation. Through this process, I sharpened my skills in **cloud computing, full-stack development, problem solving, and working within a team**.
 
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
+Regarding my attitude at work, I made a consistent effort to meet deadlines, follow the team's working process, and stay open to feedback in order to keep improving throughout the internship.
 
-To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
+Below is my self-assessment across a number of criteria, reflected as honestly as possible:
 
-| No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
-| 1   | **Professional knowledge & skills** | Understanding of the field, applying knowledge in practice, proficiency with tools, work quality | ✅    | ☐    | ☐       |
-| 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ☐    | ✅    | ☐       |
-| 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅    | ☐    | ☐       |
-| 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅    | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ☐    | ✅       |
-| 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ☐    | ✅    | ☐       |
-| 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅    | ☐       |
-| 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅    | ☐    | ☐       |
-| 9   | **Professional conduct**            | Respecting colleagues, partners, and the work environment                                        | ✅    | ☐    | ☐       |
-| 10  | **Problem-solving skills**          | Identifying problems, proposing solutions, and showing creativity                                | ☐    | ✅    | ☐       |
-| 11  | **Contribution to project/team**    | Work effectiveness, innovative ideas, recognition from the team                                  | ✅    | ☐    | ☐       |
-| 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
+| No. | Criteria | Description | Good | Fair | Average |
+| --- | --- | --- | --- | --- | --- |
+| 1 | **Technical foundation** | Grasp of cloud/AWS concepts and ability to apply them to real tasks | ✅ | ☐ | ☐ |
+| 2 | **Learning speed** | Speed of picking up new tools, services, and technologies | ☐ | ✅ | ☐ |
+| 3 | **Initiative** | Proposing tasks or improvements without being asked | ✅ | ☐ | ☐ |
+| 4 | **Accountability** | Owning assigned tasks and delivering them with quality | ✅ | ☐ | ☐ |
+| 5 | **Time management** | Meeting deadlines and following the agreed schedule | ✅ | ☐ | ☐ |
+| 6 | **Openness to feedback** | Accepting and acting on feedback from mentors/teammates | ✅ | ☐ | ☐ |
+| 7 | **Communication** | Clarity when reporting progress and explaining technical work | ☐ | ✅ | ☐ |
+| 8 | **Collaboration** | Coordinating effectively with other members of the team | ✅ | ☐ | ☐ |
+| 9 | **Professional attitude** | Respect for colleagues, mentors, and company culture | ✅ | ☐ | ☐ |
+| 10 | **Analytical thinking** | Breaking down problems and evaluating possible solutions | ☐ | ✅ | ☐ |
+| 11 | **Value delivered** | Practical contribution to the project's progress and outcomes | ✅ | ☐ | ☐ |
+| 12 | **Overall performance** | General assessment of the whole internship period | ✅ | ☐ | ☐ |
 
-### Needs Improvement
+### Areas for Improvement
 
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+* Manage time more tightly when tasks involve unfamiliar AWS services, to avoid last-minute rushes.
+* Practice explaining technical decisions in a more structured and concise way, especially during team discussions.
+* Continue developing the habit of anticipating edge cases and potential issues earlier in the development process, rather than only during testing.
+

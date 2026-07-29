@@ -1,5 +1,5 @@
 ---
-title: "Proposal (Đề xuất dự án)"
+title: "Đề xuất dự án"
 date: 2026-07-27
 weight: 2
 chapter: false
@@ -24,7 +24,7 @@ Giải pháp giúp xóa bỏ hoàn toàn chi phí bảo trì máy chủ (Zero Se
 ### 3. Kiến trúc giải pháp
 Hệ thống sử dụng kiến trúc phân tách (Decoupled Architecture). Frontend giao tiếp với AWS qua 2 cổng riêng biệt: HTTP API (REST) cho các tác vụ nặng/tĩnh và WebSocket API cho các luồng tin nhắn siêu nhẹ. 
 
-*(Chèn hình ảnh sơ đồ kiến trúc vào đây: `![Architecture Diagram](/images/2-Proposal/architecture.jpeg)`)*
+![Kiến trúc giải pháp](/images/WorkshopDiagram.drawio.png)
 
 **Các dịch vụ AWS sử dụng:**
 - **Amazon S3:** Hosting Frontend tĩnh (ReactJS) và làm kho lưu trữ ảnh.
