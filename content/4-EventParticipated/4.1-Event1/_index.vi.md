@@ -83,4 +83,4 @@ Tham dự buổi trình bày sản phẩm **FCAJ x AABW** thực sự rất giá
 * Các công cụ AI như Amazon Bedrock AgentCore có thể giúp tăng tốc đáng kể việc xây dựng chức năng thực tế khi được tích hợp một cách có chủ đích vào kiến trúc sản phẩm.
 
 #### Hình ảnh sự kiện
-![Event](/images/event1.jpg)
+![Event](images/event1.jpg)
