@@ -11,9 +11,9 @@ pre : " <b> 5.3.2 </b> "
 After the User Pool is created, you need to extract its IDs to link it with your React application.
 
 1. On the Cognito overview page, copy the **User Pool ID** (e.g., `ap-southeast-2_xxxxxxxxx`).
-![Cognito IDs](/images/5-Workshop/5.3-Cognito-auth/Screenshot4.png)
+![Cognito IDs](/images/Screenshot4.png)
 2. Navigate to the **App integration** tab, scroll down to *App clients*, and copy the **Client ID**.
-![Client IDs](/images/5-Workshop/5.3-Cognito-auth/Screenshot5.png)
+![Client IDs](/images/Screenshot5.png)
 
 3. In your React source code (`App.jsx`), install the AWS Amplify library (`npm install aws-amplify @aws-amplify/ui-react`) and configure it using the IDs you just copied:
 

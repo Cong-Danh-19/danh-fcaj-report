@@ -15,7 +15,7 @@ Instead of relying on traditional, always-on servers (like Amazon EC2), this app
 
 Below is the overall architecture of the system we are going to build:
 
-![Architecture Diagram](/images/WorkshopDiagram.drawio.png)
+![Architecture Diagram](images/WorkshopDiagram.drawio.png)
 
 ### How the system works
 
