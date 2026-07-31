@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kho lưu trữ ảnh S3 on Báo cáo thực tập</title><link>https://Cong-Danh-19.github.io/danh-fcaj-report/vi/5-workshop/5.7-s3-media-storage/</link><description>Recent content in Kho lưu trữ ảnh S3 on Báo cáo thực tập</description><generator>Hugo</generator><language>vi</language><lastBuildDate>Mon, 27 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://Cong-Danh-19.github.io/danh-fcaj-report/vi/5-workshop/5.7-s3-media-storage/index.xml" rel="self" type="application/rss+xml"/><item><title>Cấu hình Bucket Policy</title><link>https://Cong-Danh-19.github.io/danh-fcaj-report/vi/5-workshop/5.7-s3-media-storage/5.7.2-policy/</link><pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate><guid>https://Cong-Danh-19.github.io/danh-fcaj-report/vi/5-workshop/5.7-s3-media-storage/5.7.2-policy/</guid><description>&lt;h4 id="572-cấu-hình-bucket-policy-quyền-đọc-công-khai">5.7.2. Cấu hình Bucket Policy (Quyền đọc công khai)&lt;/h4>
+&lt;p>Chúng ta cần cho phép trình duyệt web đọc và hiển thị các hình ảnh được lưu trong bucket này.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Bấm vào bucket vừa tạo và chuyển sang tab &lt;strong>Permissions&lt;/strong> (Quyền).
+&lt;img alt="DynamoDB Tables" src="https://Cong-Danh-19.github.io/danh-fcaj-report/danh-fcaj-report/5-workshop/5.7-s3-media-storage/5.7.2-policy/images/Screenshot5.PNG">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Cuộn xuống mục &lt;strong>Bucket policy&lt;/strong> và nhấn &lt;strong>Edit&lt;/strong>.
+&lt;img alt="DynamoDB Tables" src="https://Cong-Danh-19.github.io/danh-fcaj-report/danh-fcaj-report/5-workshop/5.7-s3-media-storage/5.7.2-policy/images/Screenshot6.PNG">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Dán chính sách JSON sau vào. &lt;strong>Quan trọng: Thay thế &lt;code>YOUR_BUCKET_NAME&lt;/code> bằng tên bucket thực tế của bạn.&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;Version&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;2012-10-17&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;Statement&amp;#34;&lt;/span>: [
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;Sid&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;PublicRead&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;Effect&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Allow&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;Principal&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;*&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;Action&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;s3:GetObject&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;Resource&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;arn:aws:s3:::YOUR_BUCKET_NAME/*&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img alt="DynamoDB Tables" src="https://Cong-Danh-19.github.io/danh-fcaj-report/danh-fcaj-report/5-workshop/5.7-s3-media-storage/5.7.2-policy/images/Screenshot7.PNG">&lt;/p></description></item><item><title>Configure CORS</title><link>https://Cong-Danh-19.github.io/danh-fcaj-report/vi/5-workshop/5.7-s3-media-storage/5.7.3-cors/</link><pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate><guid>https://Cong-Danh-19.github.io/danh-fcaj-report/vi/5-workshop/5.7-s3-media-storage/5.7.3-cors/</guid><description>&lt;p>####5.7.3. Cấu hình CORS (Cross-Origin Resource Sharing)&lt;/p>
+&lt;p>Nếu không có CORS, trình duyệt sẽ chặn không cho phép Frontend gửi file trực
+tiếp lên S3.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Vẫn ở tab Permissions, cuộn xuống dưới cùng để tìm mục Cross-origin resource
+sharing (CORS).
+&lt;img alt="DynamoDB Tables" src="https://Cong-Danh-19.github.io/danh-fcaj-report/danh-fcaj-report/5-workshop/5.7-s3-media-storage/5.7.3-cors/images/Screenshot9.PNG">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Nhấn Edit và dán cấu hình JSON sau đây:&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>[
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;AllowedHeaders&amp;#34;&lt;/span>: [&lt;span style="color:#e6db74">&amp;#34;*&amp;#34;&lt;/span>],
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;AllowedMethods&amp;#34;&lt;/span>: [&lt;span style="color:#e6db74">&amp;#34;PUT&amp;#34;&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;GET&amp;#34;&lt;/span>],
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;AllowedOrigins&amp;#34;&lt;/span>: [&lt;span style="color:#e6db74">&amp;#34;*&amp;#34;&lt;/span>],
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;ExposeHeaders&amp;#34;&lt;/span>: []
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img alt="DynamoDB Tables" src="https://Cong-Danh-19.github.io/danh-fcaj-report/danh-fcaj-report/5-workshop/5.7-s3-media-storage/5.7.3-cors/images/Screenshot10.PNG">&lt;/p>
+&lt;ol start="3">
+&lt;li>Nhấn Save changes.
+&lt;img alt="DynamoDB Tables" src="https://Cong-Danh-19.github.io/danh-fcaj-report/danh-fcaj-report/5-workshop/5.7-s3-media-storage/5.7.3-cors/images/Screenshot11.PNG">&lt;/li>
+&lt;/ol></description></item><item><title>Tạo Bucket S3</title><link>https://Cong-Danh-19.github.io/danh-fcaj-report/vi/5-workshop/5.7-s3-media-storage/5.7.1-create-s3/</link><pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate><guid>https://Cong-Danh-19.github.io/danh-fcaj-report/vi/5-workshop/5.7-s3-media-storage/5.7.1-create-s3/</guid><description>&lt;h4 id="571-tạo-bucket-s3">5.7.1. Tạo Bucket S3&lt;/h4>
+&lt;ol>
+&lt;li>
+&lt;p>Truy cập dịch vụ &lt;strong>Amazon S3&lt;/strong> trên AWS Console và nhấn &lt;strong>Create bucket&lt;/strong>.
+&lt;img alt="DynamoDB Tables" src="https://Cong-Danh-19.github.io/danh-fcaj-report/danh-fcaj-report/5-workshop/5.7-s3-media-storage/5.7.1-create-s3/images/Screenshot1.PNG">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Bucket name:&lt;/strong> Nhập một tên duy nhất trên toàn cầu (VD: &lt;code>chatapp-images-2026&lt;/code>). Hãy nhớ tên này vì bạn sẽ cần dùng lại nó.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Object Ownership:&lt;/strong> Chọn &lt;strong>ACLs disabled (recommended)&lt;/strong>.
+&lt;img alt="DynamoDB Tables" src="https://Cong-Danh-19.github.io/danh-fcaj-report/danh-fcaj-report/5-workshop/5.7-s3-media-storage/5.7.1-create-s3/images/Screenshot2.PNG">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Cài đặt Block Public Access:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Bỏ chọn&lt;/strong> (Uncheck) ô &lt;em>Block all public access&lt;/em>.&lt;/li>
+&lt;li>Tick vào ô xác nhận cảnh báo rằng các file có thể hiển thị công khai. (Chúng ta cần điều này để người dùng có thể xem ảnh trong khung chat).
+&lt;img alt="DynamoDB Tables" src="https://Cong-Danh-19.github.io/danh-fcaj-report/danh-fcaj-report/5-workshop/5.7-s3-media-storage/5.7.1-create-s3/images/Screenshot3.PNG">&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Cuộn xuống cuối trang và nhấn &lt;strong>Create bucket&lt;/strong>.
+&lt;img alt="DynamoDB Tables" src="https://Cong-Danh-19.github.io/danh-fcaj-report/danh-fcaj-report/5-workshop/5.7-s3-media-storage/5.7.1-create-s3/images/Screenshot4.PNG">&lt;/p></description></item></channel></rss>
